@@ -33,7 +33,6 @@ node {
             app.push("latest")
         }
     stage "deploy"
-    withEnv(['DOCKER_HOST=tcp://192.168.0.25']) {
         sh "docker-compose up -d"
         sh "docker-compose ps"
         }
