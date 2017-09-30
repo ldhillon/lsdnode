@@ -2,6 +2,6 @@ version: '2'
 services:
   lsdnode:
     ports:
-     - "8001:8000"
+     - "8000:8000"
     image: "ldhillon/lsdnode"
 
