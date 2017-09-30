@@ -32,5 +32,7 @@ node {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
+    stage('Deploy')
+	sh docker-compose up -d
     }
 }
